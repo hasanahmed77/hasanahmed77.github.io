@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/secondary.css">
+    <link rel="shortcut icon" href="images/logo.svg">
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.svg" alt="logo" class="logo"></a>
+        <div>
+            <img class="btn-toggle" src="images/toggle_modes.svg" alt="toggle modes">
+            <a href="#"><img class="btn-ham" src="images/hamburger.svg" alt="hamburger" id="menu"></a>
+            <nav class="navMain hide-mobile">
+                <ul class="show-desktop" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop animate">x</li>
+                    <li><a href="index.html" class="animate">home</a></li>
+                    <li><a href="index.html" class="animate">about</a></li>
+                    <li><a href="contact.html" target="_blank" class="animate">contact</a></li>
+                    <li><a href="#" class="animate">resume</a>
+                        <a href="#">
+                            <img src="images/download1.svg" alt="Download button" class="download-btn animate">
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="social-img">
+        <a href="https://www.facebook.com/megatron.kyuubi" target="_blank">
+            <img src="contact_images/facebook.svg" alt="Facebook" class="facebook social-link">
+        </a>
+        <a href="https://www.instagram.com/mr_legendaryyy/" target="_blank">
+            <img src="contact_images/instagram.svg" alt="Instagram" class="instagram social-link">
+        </a>
+        <a href="https://twitter.com/Mr_Legendaryyy" target="_blank">
+            <img src="contact_images/twitter.svg" alt="Twitter" class="Twitter social-link">
+        </a>
+        <a href="https://github.com/hasanahmed77" target="_blank">
+            <img src="contact_images/github.svg" alt="Github" class="Github social-link">
+        </a>
+        <a href="https://www.twitch.tv/dawgawesome" target="_blank">
+            <img src="contact_images/twitch.png" alt="Twitch" class="Twitch social-link">
+        </a>
+        <a href="https://www.youtube.com/channel/UCHApy_CISv1v6ePmDbzSQHw" target="_blank">
+            <img src="contact_images/youtube.svg" alt="YouTube" class="YouTube social-link">
+        </a>
+        <a href="#">
+            <img src="contact_images/email.svg" alt="email" class="email-img social-link">
+        </a>
+        <div class="email">megatron.kyuubi@gmail.com</div>
+    </div>
+
+    <div class="contact">
+        <p>CONTACT</p>
+    </div>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.querySelector(".navMain");
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            console.log("works");
+        });
+        exit.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            console.log("works");
+        });
+    </script>
+
+</body>
+
+</html>

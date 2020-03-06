@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74.122" height="38.827" viewBox="0 0 74.122 38.827">
+  <g id="hamburger" transform="translate(-1807 -38.173)">
+    <g id="Rectangle_9" data-name="Rectangle 9" transform="translate(1811.905 38.173)" fill="#cb1f1f" stroke="#707070" stroke-width="1">
+      <rect width="64.023" height="8.656" stroke="none"/>
+      <rect x="0.5" y="0.5" width="63.023" height="7.656" fill="none"/>
+    </g>
+    <g id="Path_4" data-name="Path 4" transform="translate(1807 52.97)" fill="#231717">
+      <path d="M 73.62216186523438 8.733460426330566 L 0.5000009536743164 8.733460426330566 L 0.5000009536743164 0.5000002384185791 L 73.62216186523438 0.5000002384185791 L 73.62216186523438 8.733460426330566 Z" stroke="none"/>
+      <path d="M 1 1 L 1 8.233460426330566 L 73.12216186523438 8.233460426330566 L 73.12216186523438 1 L 1 1 M 0 0 L 74.12216186523438 0 L 74.12216186523438 9.233460426330566 L 0 9.233460426330566 L 0 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Rectangle_11" data-name="Rectangle 11" transform="translate(1811.905 68.344)" fill="#cb1f1f" stroke="#707070" stroke-width="1">
+      <rect width="64.023" height="8.656" stroke="none"/>
+      <rect x="0.5" y="0.5" width="63.023" height="7.656" fill="none"/>
+    </g>
+  </g>
+</svg>

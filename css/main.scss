@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
+$color-primary-white: white;
+$color-primary-dark: #231717;
+$color-secondary: #CB1F1F;
+$desktop: 1360px;
+$desktop2: 1600px;
+$tablet: 500px;
+// MIXINS
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin desktop2 {
+    @media (min-width: #{$desktop2}) {
+        @content;
+    }
+}
+
+// STARTS
+body,
+html {
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    padding: 1em;
+    z-index: 90;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    //background-color: $color-primary-white;
+    height: 1%;
+    @include desktop {
+        width: 100%;
+    }
+    .btn-toggle {
+        width: 3.5em;
+        cursor: pointer;
+        padding-right: 0.5em;
+        margin-top: 0.1em;
+        @include desktop {
+            width: 75px;
+            padding-right: 3.5em;
+        }
+    }
+    .btn-ham {
+        width: 3em;
+        cursor: pointer;
+        transition: transform 0.7s;
+        @include desktop {
+            width: 65px;
+            margin-left: -40px;
+            padding-right: 2.5em;
+            margin-top: 0.1em;
+        }
+    }
+    .btn-ham:hover {
+        transform: rotateY(360deg)
+    }
+    .logo {
+        width: 30px;
+        margin-top: -0.3em;
+        padding-left: 0.3em;
+        @include desktop {
+            width: 70%;
+        }
+    }
+}
+
+.anim-panel {
+    .btn {
+        transition: all 500ms;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.5em;
+        text-decoration: none;
+        color: $color-primary-dark;
+        font-weight: bold;
+        background: url('../images/Polygon\ 5.svg') no-repeat;
+        background-size: 10px;
+        background-position: 0 1px;
+        border: 1px solid gray;
+        @include desktop {
+            background-size: 13px;
+        }
+    }
+    .portfolio {
+        padding: 0.7em 2em 1em 3em;
+        background-position: 2.2em 1.2em;
+        margin-top: 10px;
+        margin-left: -1em;
+        float: left;
+        @include tablet {
+            padding: 1em 3em 1.3em 4em;
+            background-position: 3em 1.5em;
+        }
+        @include desktop {
+            font-size: 2.7em;
+            margin-top: 5%;
+            padding: 0.5em 1.3em 0.8em 2.6em;
+            background-position: 2em 1.2em;
+        }
+        @include desktop2 {
+            margin-top: 4%;
+        }
+    }
+    .gaming {
+        margin-top: 45px;
+        margin-right: -0.1em;
+        padding: 0.7em 2em 1em 2.7em;
+        background-position: 1.85em 1.25em;
+        float: right;
+        @include tablet {
+            margin-top: 130px;
+            padding: 1em 3em 1.3em 3.5em;
+            background-position: 2.5em 1.5em;
+        }
+        @include desktop {
+            font-size: 2.7em;
+            margin-top: 5%;
+            padding: 0.5em 1.7em 0.8em 2em;
+            background-position: 1.3em 1.15em;
+        }
+        @include desktop2 {
+            margin-top: 4%;
+        }
+    }
+    .btn:hover {
+        font-size: 3.5em;
+        font-size-adjust: 20px;
+    }
+}
+
+.bitmoji {
+    width: 100%;
+    padding-top: 1.7em;
+    position: relative;
+    z-index: 21;
+    @include desktop {
+        width: 30%;
+        margin-top: 100px;
+        padding-left: 5em;
+    }
+}
+
+.clipper {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    .line-1 {
+        text-align: center;
+        margin-top: 0.1em;
+        z-index: -20;
+        @include desktop {
+            font-size: 3.5em;
+            margin-top: -3.5em;
+            padding-left: 1.9em;
+        }
+        @include desktop2 {
+            font-size: 4em;
+            margin-top: -4em;
+            padding-left: 1em;
+        }
+    }
+    .line-2 {
+        text-align: center;
+        margin-top: -0.7em;
+        @include desktop {
+            font-size: 3.5em;
+            margin-top: -1em;
+            padding-left: 5.6em;
+        }
+        @include desktop2 {
+            font-size: 4em;
+            padding-left: 4.7em;
+            padding-top: 0em;
+        }
+    }
+    @include tablet {
+        font-size: 1.7em;
+    }
+}
+
+.aboutMe {
+    font-size: 1.6em;
+    text-align: center;
+    opacity: 60%;
+    font-family: 'Montserrat', sans-serif;
+    @include tablet {
+        font-size: 2em;
+    }
+    @include tablet {
+        margin-top: -0.5em;
+    }
+    @include desktop {
+        font-size: 2.5em;
+        margin-left: 9.5em;
+        margin-top: -1.5em;
+    }
+    @include desktop2 {
+        font-size: 2.6em;
+        margin-left: 6.45em;
+        margin-top: -1.5em;
+    }
+}
+
+.aboutME_ {
+    @include desktop {
+        display: block;
+        margin-left: -8.8em;
+    }
+    .aboutME::before_ {
+        @include desktop {
+            content: attr(data-text);
+        }
+    }
+}
+
+.social {
+    transition: transform 500ms;
+    z-index: 23;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4.2em;
+    left: 1em;
+    padding-top: 1%;
+    img {
+        width: 35px;
+        padding-bottom: 0.3em;
+        @include tablet {
+            width: 35px;
+        }
+        @include desktop {
+            width: 35px;
+        }
+        @include desktop2 {
+            padding-bottom: 1em;
+            width: 47px;
+        }
+    }
+    @include tablet {
+        top: 5.5em;
+        left: 1.5em;
+    }
+    @include desktop {
+        top: 33.5%;
+        left: 7.5%;
+    }
+    @include desktop2 {
+        top: 29%;
+        left: 6%;
+    }
+}
+
+//animations
+.social-link:hover {
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
+    transform: scale(1.2);
+}
+
+.animate:hover {
+    color: white;
+}
+
+nav ul {
+    transition: all 500ms;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: $color-secondary;
+    height: 100%;
+    z-index: 7;
+    padding-top: 3em;
+    list-style-type: none;
+    margin-top: 0;
+    @include desktop {
+        width: 30%;
+    }
+}
+
+nav ul li a {
+    font-family: 'Audiowide', cursive;
+    text-decoration: none;
+    color: $color-primary-dark;
+    display: block;
+    width: 100%;
+    line-height: 0.01em;
+    padding-right: 2em;
+    padding-left: 2em;
+    margin-top: 2.5em;
+    background-color: $color-secondary;
+    font-size: 2.5em;
+    font-weight: bold;
+    @include desktop {
+        font-size: 3.5em;
+        margin-top: 2.5em;
+        padding-left: 1.3em;
+    }
+}
+
+.exit-btn {
+    font-family: Audiowide;
+    font-size: 3em;
+    text-align: right;
+    padding-right: 0.8em;
+    margin-top: -0.7em;
+    cursor: pointer;
+    @include desktop {
+        font-size: 3.3em;
+    }
+}
+
+.download-btn {
+    position: absolute;
+    z-index: 10;
+    padding-left: 3.9em;
+    margin-top: -2.8em;
+    @include desktop {
+        margin-top: -2.65em;
+        padding-left: 3.7em;
+    }
+}
+
+.hide-mobile {
+    display: none;
+}
+
+.hero {
+    position: relative;
+    z-index: 31;
+}

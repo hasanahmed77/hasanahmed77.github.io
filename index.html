@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasan Ahmed</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="images/logo.svg">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.svg" alt="logo" class="logo"></a>
+        <div>
+            <img class="btn-toggle" src="images/toggle_modes.svg" alt="toggle modes">
+            <img class="btn-ham" src="images/hamburger.svg" alt="hamburger" id="menu">
+            <nav class="navMain hide-mobile">
+                <ul class="show-desktop" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop animate">x</li>
+                    <li><a href="index.html" class="animate">home</a></li>
+                    <li><a href="index.html" class="animate">about</a></li>
+                    <li><a href="contact.html" target="_blank" class="animate">contact</a></li>
+                    <li><a href="#" class="animate">resume</a>
+                        <a href="#">
+                            <img src="images/download1.svg" alt="Download button" class="download-btn animate">
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <!-- <nav>
+            <ul>
+                <li><button class="btn-toggle"><img src="images/toggle modes.svg" alt="toggle modes"></button></li>
+                <li><button class="btn-hamburger"><img src="images/hamburger.svg" alt="hamburger"></button></li>
+            </ul>
+        </nav> -->
+    </header>
+
+    <div class="wrapper">
+        <div class="main-section">
+            <section class="hero">
+
+                <img src="images/main_2.jpg" alt="me" class="bitmoji">
+                <div class="social">
+                    <a href="https://www.facebook.com/megatron.kyuubi" target="_blank"> <img src="images/facebook.svg" alt="facebook" class="facebook social-link"></a>
+                    <a href="https://www.instagram.com/mr_legendaryyy/" target="_blank"> <img src="images/instagram.svg" alt="instagram" class="instagram social-link"></a>
+                    <a href="https://twitter.com/Mr_Legendaryyy" target="_blank"> <img src="images/twitter.svg" alt="twitter" class="twitter social-link"></a>
+                    <a href="https://github.com/hasanahmed77" target="_blank"> <img src="images/github.svg" alt="github" class="github social-link"></a>
+                </div>
+
+            </section>
+
+            <section class="intro">
+
+                <div class="inner">
+                    <div class="clipper">
+                        <h1 class="line-1">Hey there!</h1>
+                        <h1 class="line-2"> I'm Hasan Ahmed.</h1>
+
+                    </div>
+
+                    <div class="aboutMe">
+
+                        <p>A web developer, content creator <span class="aboutME_">and a streamer.</span> </p>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <section class="bottom">
+            <div class="anim-panel">
+
+                <a href="#" class="portfolio btn">portfolio</a>
+                <a href="https://www.facebook.com/dawgawesome" target="_blank" class="gaming btn">gaming</a>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.querySelector(".navMain");
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            console.log("works");
+        });
+        exit.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            console.log("works");
+        });
+
+        //animations
+        document.addEventListener("DOMContentLoaded", function(event) {
+
+            // wait until window is loaded - meaning all images, stylesheets, js, fonts, media assets, and links
+            window.addEventListener("load", function(e) {
+
+                document.body.style.display = 'block';
+                var tl = new TimelineMax();
+
+                tl.staggerFrom('section', 2, {
+                    opacity: 0,
+                    scale: .5,
+                    ease: Power2.easeOut
+                }, 0.2)
+
+                // show .from() initially
+                tl.staggerFrom('h1, h2', .5, {
+                    opacity: 0,
+                    y: -40,
+                    ease: Power2.easeInOut
+                }, 0.2, "-=2")
+
+                tl.staggerFrom('.anim-panel', 1, {
+                    opacity: 0,
+                    y: -40,
+                    ease: Power2.easeInOut
+                }, 0.2, "-=1.5")
+
+            }, false);
+        });
+    </script>
+</body>
+
+</html>
