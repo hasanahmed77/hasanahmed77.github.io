@@ -50,9 +50,6 @@ a:hover { color: var(--fg-strong); }
 
 ::selection { background: rgba(255, 255, 255, 0.22); }
 
-/* Opt-in: pages that should never scroll (About only). */
-body.no-scroll { overflow: hidden; }
-
 .wrap {
   max-width: var(--maxw);
   margin: 0 auto;
